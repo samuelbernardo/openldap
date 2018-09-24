@@ -16,7 +16,7 @@ Terraform will allow the code independency from the provider. Ansible provisione
 [3] https://github.com/unchained-capital/ansible-ldap-modules
 
 
-## JIRA integration
+## JIRA Smart Commits
 
 Create smart  commits with the following syntax
 
