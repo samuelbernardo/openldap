@@ -7,13 +7,37 @@ Goal: deploy OpenLDAP with mirror mode replication
 - base image: CentOS 7
 - ldap setup and configuration using ansible
 
-Terraform will allow the code independency from the provider. Ansible provisioner will automate the deployment and configuration using the modules such as [2] and [3].
+Terraform will allow the code independency from the provider. Ansible provisioner will automate the deployment and configuration using the modules such as [2].
 
 [1] https://dev.to/frosnerd/continuous-delivery-on-aws-with-terraform-and-travis-ci-3914
 
 [2] https://docs.ansible.com/ansible/latest/modules/modules_by_category.html
 
+## Related projects
+
 [3] https://github.com/unchained-capital/ansible-ldap-modules
+
+[4] https://docs.ansible.com/ansible/latest/modules/ldap_attr_module.html#ldap-attr-module
+
+[5] https://docs.ansible.com/ansible/latest/modules/ldap_entry_module.html#ldap-entry-module
+
+[6] https://docs.ansible.com/ansible/latest/modules/ldap_passwd_module.html#ldap-passwd-module
+
+[7] https://github.com/kbrebanov/ansible-openldap
+
+[8] https://github.com/debops/ansible-slapd
+
+[9] https://github.com/mrlesmithjr/ansible-openldap
+
+[10] https://github.com/bennojoy/openldap_server
+
+[11] https://github.com/gronke/ansible-openldap
+
+[12] https://github.com/CSCfi/ansible-role-openldap
+
+## OpenLDAP documentation
+
+[13] https://www.openldap.org/doc/admin24/replication.html
 
 
 ## JIRA Smart Commits
@@ -38,4 +62,6 @@ Logs 2 days and 5 hours of work against issues JRA-123, JRA-234 and JRA-345, add
 
 Multiple issue keys must be separated by whitespace or commas.
 
-Reference: https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+### References
+
+[13] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
