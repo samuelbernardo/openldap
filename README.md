@@ -64,4 +64,4 @@ Multiple issue keys must be separated by whitespace or commas.
 
 ### References
 
-[13] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+[14] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
