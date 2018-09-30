@@ -39,6 +39,9 @@ Terraform will allow the code independency from the provider. Ansible provisione
 
 [13] https://www.openldap.org/doc/admin24/replication.html
 
+## Ansible and Terraform
+
+[14] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
 
 ## JIRA Smart Commits
 
@@ -64,4 +67,4 @@ Multiple issue keys must be separated by whitespace or commas.
 
 ### References
 
-[14] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+[15] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
