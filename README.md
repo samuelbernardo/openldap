@@ -42,6 +42,7 @@ Terraform will allow the code independency from the provider. Ansible provisione
 ## Ansible and Terraform
 
 [14] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
+[15] https://github.com/ramitsurana/terraform-ansible-setup
 
 ## JIRA Smart Commits
 
