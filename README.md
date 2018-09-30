@@ -67,6 +67,14 @@ Terraform will allow the code independency from the provider. Ansible provisione
 
 [23] https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html
 
+### Terraform LDAP provider
+
+[24] https://devhub.io/repos/Pryz-terraform-provider-ldap
+
+[25] https://github.com/Pryz/terraform-provider-ldap
+
+[26] https://github.com/mevansam/terraform-provider-ldap
+
 ## JIRA Smart Commits
 
 Create smart  commits with the following syntax
@@ -91,4 +99,4 @@ Multiple issue keys must be separated by whitespace or commas.
 
 ### References
 
-[24] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+[27] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
