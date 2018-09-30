@@ -39,11 +39,33 @@ Terraform will allow the code independency from the provider. Ansible provisione
 
 [13] https://www.openldap.org/doc/admin24/replication.html
 
-## Ansible and Terraform
+## Terraform
 
-[14] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
+[14] https://www.terraform.io/docs/provisioners/index.html
 
-[15] https://github.com/ramitsurana/terraform-ansible-setup
+[15] https://www.terraform.io/docs/providers/
+
+### Terraform Ansible provisioner
+
+[16] https://github.com/jonmorehouse/terraform-provisioner-ansible (discontinued)
+
+[17] https://github.com/radekg/terraform-provisioner-ansible
+
+[18] https://github.com/adammck/terraform-inventory
+
+## Terraform Ansible provider
+
+[18] https://github.com/nbering/terraform-provider-ansible/
+
+[19] https://nicholasbering.ca/tools/2018/01/08/introducing-terraform-provider-ansible/
+
+[20] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
+
+[21] https://github.com/ramitsurana/terraform-ansible-setup
+
+[22] https://github.com/nbering/terraform-inventory/
+
+[23] https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html
 
 ## JIRA Smart Commits
 
@@ -69,4 +91,4 @@ Multiple issue keys must be separated by whitespace or commas.
 
 ### References
 
-[16] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+[24] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
