@@ -53,7 +53,7 @@ Terraform will allow the code independency from the provider. Ansible provisione
 
 [18] https://github.com/adammck/terraform-inventory
 
-## Terraform Ansible provider
+### Terraform Ansible provider
 
 [18] https://github.com/nbering/terraform-provider-ansible/
 
