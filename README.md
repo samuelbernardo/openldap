@@ -1,6 +1,6 @@
 # OpenLDAP
 
-Goal: deploy OpenLDAP with mirror mode replication
+Goal: deploy OpenLDAP with mirror mode replication and also proxy slapd to support multiple ldap trees
 
 - configure CI with Travis
 - do orquestration using terraform with provider libvirt (or AWS EC2 as suggested in [1]) and provisioner ansible
@@ -39,41 +39,43 @@ Terraform will allow the code independency from the provider. Ansible provisione
 
 [13] https://www.openldap.org/doc/admin24/replication.html
 
+[14] http://www.openldap.org/doc/admin24/guide.html#Deployment%20Alternatives
+
 ## Terraform
 
-[14] https://www.terraform.io/docs/provisioners/index.html
+[15] https://www.terraform.io/docs/provisioners/index.html
 
-[15] https://www.terraform.io/docs/providers/
+[16] https://www.terraform.io/docs/providers/
 
 ### Terraform Ansible provisioner
 
-[16] https://github.com/jonmorehouse/terraform-provisioner-ansible (discontinued)
+[17] https://github.com/jonmorehouse/terraform-provisioner-ansible (discontinued)
 
-[17] https://github.com/radekg/terraform-provisioner-ansible
+[18] https://github.com/radekg/terraform-provisioner-ansible
 
-[18] https://github.com/adammck/terraform-inventory
+[19] https://github.com/adammck/terraform-inventory
 
 ### Terraform Ansible provider
 
-[18] https://github.com/nbering/terraform-provider-ansible/
+[20] https://github.com/nbering/terraform-provider-ansible/
 
-[19] https://nicholasbering.ca/tools/2018/01/08/introducing-terraform-provider-ansible/
+[21] https://nicholasbering.ca/tools/2018/01/08/introducing-terraform-provider-ansible/
 
-[20] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
+[22] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
 
-[21] https://github.com/ramitsurana/terraform-ansible-setup
+[23] https://github.com/ramitsurana/terraform-ansible-setup
 
-[22] https://github.com/nbering/terraform-inventory/
+[24] https://github.com/nbering/terraform-inventory/
 
-[23] https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html
+[25] https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html
 
 ### Terraform LDAP provider
 
-[24] https://devhub.io/repos/Pryz-terraform-provider-ldap
+[26] https://devhub.io/repos/Pryz-terraform-provider-ldap
 
-[25] https://github.com/Pryz/terraform-provider-ldap
+[27] https://github.com/Pryz/terraform-provider-ldap
 
-[26] https://github.com/mevansam/terraform-provider-ldap
+[28] https://github.com/mevansam/terraform-provider-ldap
 
 ## JIRA Smart Commits
 
@@ -99,4 +101,4 @@ Multiple issue keys must be separated by whitespace or commas.
 
 ### References
 
-[27] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+[29] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
