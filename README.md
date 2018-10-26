@@ -6,6 +6,7 @@ Goal: deploy OpenLDAP with mirror mode replication and also proxy mode for repli
 - do orquestration using terraform with provider libvirt (or AWS EC2 as suggested in [1]) and provisioner ansible
 - base image: CentOS 7
 - ldap setup and configuration using ansible
+- ldap instance with meta backend to allow multiple domains to be accessible from the same ldap client
 
 Terraform will allow the code independency from the provider. Ansible provisioner will automate the deployment and configuration using the modules such as [2].
 
@@ -37,45 +38,73 @@ Terraform will allow the code independency from the provider. Ansible provisione
 
 ## OpenLDAP documentation
 
-[13] https://www.openldap.org/doc/admin24/replication.html
+[13] http://www.openldap.org/doc/admin24/guide.html
 
-[14] http://www.openldap.org/doc/admin24/guide.html#Deployment%20Alternatives
+[14] https://www.openldap.org/doc/admin24/replication.html
+
+[15] https://www.openldap.org/doc/admin24/backends.html
+
+[16] http://www.openldap.org/software/man.cgi?query=slapd-ldap&sektion=5&apropos=0&manpath=OpenLDAP+2.4-Release
+
+[17] http://www.openldap.org/software/man.cgi?query=slapo-rwm&sektion=5&apropos=0&manpath=OpenLDAP+2.4-Release
+
+### OpenLDAP meta backend
+
+[18] http://www.openldap.org/software/man.cgi?query=slapd-meta&apropos=0&sektion=0&manpath=OpenLDAP+2.4-Release&format=html
+
+[19] https://serverfault.com/questions/106869/how-can-i-proxy-multiple-ldap-servers-and-still-have-grouping-of-users-on-the-p
+
+[20] https://github.com/kgalal/meta-ldap
+
+[21] http://blog.oddbit.com/2010/02/16/merging-directories-with-openldap-meta/
+
+[22] https://gist.github.com/pbruna/7229c3e99dd4bf57b73c
+
+[23] https://www.pixelstech.net/article/1509203627-OpenLDAP-Proxy----Introduction
+
+[24] https://www.pixelstech.net/article/1509263631-OpenLDAP-Proxy----slapd-conf
+
+[25] https://www.pixelstech.net/article/1509756599-OpenLDAP-Proxy----Installation-and-configuration
+
+[26] https://www.pixelstech.net/article/1509784887-OpenLDAP-Proxy----Tricks-and-tips
+
+[27] https://www.pixelstech.net/article/1517623155-OpenLDAP-Proxy----rwm-map-vs-map
 
 ## Terraform
 
-[15] https://www.terraform.io/docs/provisioners/index.html
+[28] https://www.terraform.io/docs/provisioners/index.html
 
-[16] https://www.terraform.io/docs/providers/
+[29] https://www.terraform.io/docs/providers/
 
 ### Terraform Ansible provisioner
 
-[17] https://github.com/jonmorehouse/terraform-provisioner-ansible (discontinued)
+[30] https://github.com/jonmorehouse/terraform-provisioner-ansible (discontinued)
 
-[18] https://github.com/radekg/terraform-provisioner-ansible
+[31] https://github.com/radekg/terraform-provisioner-ansible
 
-[19] https://github.com/adammck/terraform-inventory
+[32] https://github.com/adammck/terraform-inventory
 
 ### Terraform Ansible provider
 
-[20] https://github.com/nbering/terraform-provider-ansible/
+[33] https://github.com/nbering/terraform-provider-ansible/
 
-[21] https://nicholasbering.ca/tools/2018/01/08/introducing-terraform-provider-ansible/
+[34] https://nicholasbering.ca/tools/2018/01/08/introducing-terraform-provider-ansible/
 
-[22] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
+[35] https://docs.ansible.com/ansible/devel/modules/terraform_module.html
 
-[23] https://github.com/ramitsurana/terraform-ansible-setup
+[36] https://github.com/ramitsurana/terraform-ansible-setup
 
-[24] https://github.com/nbering/terraform-inventory/
+[37] https://github.com/nbering/terraform-inventory/
 
-[25] https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html
+[38] https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html
 
 ### Terraform LDAP provider
 
-[26] https://devhub.io/repos/Pryz-terraform-provider-ldap
+[39] https://devhub.io/repos/Pryz-terraform-provider-ldap
 
-[27] https://github.com/Pryz/terraform-provider-ldap
+[40] https://github.com/Pryz/terraform-provider-ldap
 
-[28] https://github.com/mevansam/terraform-provider-ldap
+[41] https://github.com/mevansam/terraform-provider-ldap
 
 ## JIRA Smart Commits
 
@@ -101,4 +130,4 @@ Multiple issue keys must be separated by whitespace or commas.
 
 ### References
 
-[29] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+[42] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
