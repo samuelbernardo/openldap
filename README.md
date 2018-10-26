@@ -1,6 +1,6 @@
 # OpenLDAP
 
-Goal: deploy OpenLDAP with mirror mode replication and also proxy slapd to support multiple ldap trees
+Goal: deploy OpenLDAP with mirror mode replication and also proxy mode for replicas distribution
 
 - configure CI with Travis
 - do orquestration using terraform with provider libvirt (or AWS EC2 as suggested in [1]) and provisioner ansible
