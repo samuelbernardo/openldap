@@ -7,6 +7,8 @@ Goal: deploy OpenLDAP with mirror mode replication and also proxy mode for repli
 - base image: CentOS 7
 - ldap setup and configuration using ansible
 - ldap instance with meta backend to allow multiple domains to be accessible from the same ldap client
+- test ldap client with ssh authentication using ssh keys
+- test ldap client with saml authentication using ldap sasl pam module
 
 Terraform will allow the code independency from the provider. Ansible provisioner will automate the deployment and configuration using the modules such as [2].
 
@@ -106,6 +108,20 @@ Terraform will allow the code independency from the provider. Ansible provisione
 
 [41] https://github.com/mevansam/terraform-provider-ldap
 
+## OpenLDAP SASL
+
+### SAML authentication
+
+[42] https://github.com/shoaibali/crudesaml
+
+[43] https://github.com/ck-ws/pam-script-saml
+
+[44] https://www.keycloak.org/docs/3.0/server_admin/topics/user-federation/sssd.html
+
+[45] https://www.keycloak.org/docs/3.0/index.html
+
+[46] https://www.keycloak.org/docs/3.2/server_admin/topics/identity-broker/saml.html
+
 ## JIRA Smart Commits
 
 Create smart  commits with the following syntax
@@ -130,4 +146,4 @@ Multiple issue keys must be separated by whitespace or commas.
 
 ### References
 
-[42] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
+[47] https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html
